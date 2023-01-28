@@ -11,4 +11,18 @@
       <ProjectReference Include="..\RGBLedMatrix\RGBLedMatrix.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="sun20x20.bmp" />
+      <EmbeddedResource Include="sun20x20.bmp">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <None Update="font.bdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SkiaSharp" Version="2.88.3" />
+    </ItemGroup>
+
 </Project>
